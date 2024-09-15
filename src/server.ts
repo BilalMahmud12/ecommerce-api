@@ -1,14 +1,16 @@
 import express from "express";
 import dotenv from "dotenv";
+import helmet from 'helmet';
 import connectDB from "./config/db";
 import catalogRoutes from "./routes/catalogRoutes";
-import './models/index'
 
 dotenv.config();
 connectDB();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+
+app.use(helmet());
 app.use(express.json());
 
 app.use('/api/catalog', catalogRoutes);
