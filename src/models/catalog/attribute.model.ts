@@ -1,6 +1,6 @@
 import mongoose, { Schema, Document } from "mongoose";
 
-interface IAttribute extends Document {
+export interface IAttribute extends Document {
     name: string;
     valueType: string;
     options: string[];

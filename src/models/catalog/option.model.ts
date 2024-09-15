@@ -1,6 +1,6 @@
 import mongoose, { Schema, Document } from "mongoose";
 
-interface IOption extends Document {
+export interface IOption extends Document {
     name: string;
     hexCode?: string;
     baseColor?: string;

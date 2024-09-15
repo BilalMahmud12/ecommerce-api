@@ -1,6 +1,6 @@
 import mongoose, { Schema, Document } from "mongoose";
 
-interface IProductVariant extends Document {
+export interface IProductVariant extends Document {
     product: mongoose.Types.ObjectId;
     name: string;
     slug: string;

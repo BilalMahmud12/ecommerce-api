@@ -1,6 +1,6 @@
 import mongoose, { Schema, Document } from "mongoose";
 
-interface IAttributeSet extends Document {
+export interface IAttributeSet extends Document {
     name: string;
     attributes: mongoose.Types.ObjectId[];
     categoies: mongoose.Types.ObjectId[];

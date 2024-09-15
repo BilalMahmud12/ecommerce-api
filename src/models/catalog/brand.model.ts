@@ -1,6 +1,6 @@
 import mongoose, { Schema, Document } from "mongoose";
 
-interface IBrand extends Document {
+export interface IBrand extends Document {
     active: boolean;
     name: string;
     slug: string;

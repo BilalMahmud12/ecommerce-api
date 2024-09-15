@@ -11,7 +11,7 @@ enum VariantType {
     COLOR_SIZE = "Color and Size"
 }
 
-interface IProduct extends Document {
+export interface IProduct extends Document {
     active: boolean;
     type: ProductType;
     hasVariants: boolean;
