@@ -15,7 +15,7 @@ const AttributeSetSchema: Schema = new Schema({
         type: mongoose.Schema.Types.ObjectId, 
         ref: "Attribute" 
     }],
-    categoies: [{ 
+    categories: [{ 
         type: mongoose.Schema.Types.ObjectId, 
         ref: "Category" 
     }],

@@ -1,19 +1,7 @@
-import Product from "./product.model"
-import productVariant from "./productVariant.model"
-import Category from "./category.model"
-import Brand from "./brand.model"
-import attributeSet from "./attributeSet.model"
-import attribute from "./attribute.model"
-import optionSet from "./optionSet.model"
-import option from "./option.model"
-
-export {
-    Product,
-    Category,
-    Brand,
-    productVariant,
-    attributeSet,
-    attribute,
-    optionSet,
-    option
-}
+export { default as Category } from './category.model';
+export { default as Brand } from './brand.model';
+export { default as AttributeSet } from './attributeSet.model';
+export { default as Attribute } from './attribute.model';
+export { default as OptionSet } from './optionSet.model';
+export { default as Option } from './option.model';
+export { default as Product } from './product.model';
