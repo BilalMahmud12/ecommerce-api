@@ -2,13 +2,14 @@ import { Router } from 'express';
 import * as OptionController from '../../controllers/catalog/option.controller';
 import { validate } from '../../middleware/validate';
 import { createOptionSchema, updateOptionSchema } from '../../services/validation';
+import { verifyApiKey } from '../../middleware/apiKeyMiddleware';
 
 const router = Router();
 
-router.get('/', OptionController.getOptions);
-router.get('/:id', OptionController.getOptionById);
-router.post('/', validate(createOptionSchema), OptionController.createOption);
-router.put('/:id', validate(updateOptionSchema), OptionController.updateOption);
-router.delete('/:id', OptionController.deleteOption);
+router.get('/', verifyApiKey, OptionController.getOptions);
+router.get('/:id', verifyApiKey, OptionController.getOptionById);
+router.post('/', verifyApiKey, validate(createOptionSchema), OptionController.createOption);
+router.put('/:id', verifyApiKey, validate(updateOptionSchema), OptionController.updateOption);
+router.delete('/:id', verifyApiKey, OptionController.deleteOption);
 
 export default router;
