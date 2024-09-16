@@ -61,7 +61,7 @@ src/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/ecommerce-api.git
+   git clone https://github.com/BilalMahmud12/ecommerce-api.git
    cd ecommerce-api
    ```
 
@@ -222,10 +222,10 @@ Unit tests are implemented using **Jest** and cover controllers, services, and v
 ### Example: Product Service Unit Test
 
 ```typescript
-import * as ProductService from '../../src/services/catalog/productService';
-import * as ProductRepository from '../../src/repositories/catalog/productRepository';
+import * as ProductService from '../../services/catalog/product.service';
+import * as ProductRepository from '../../repository/catalog/product.repository';
 
-jest.mock('../../src/repositories/catalog/productRepository');
+jest.mock('../../repository/catalog/product.repository');
 
 describe('Product Service', () => {
     it('should fetch all products', async () => {
