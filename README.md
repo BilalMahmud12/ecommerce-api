@@ -84,7 +84,7 @@ Create a `.env` file in the root directory with the following environment variab
 MONGO_URI=mongodb://localhost:27017/ecommerce
 
 # Server port
-PORT=5000
+PORT=8800
 ```
 
 ---
